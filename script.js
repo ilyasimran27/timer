@@ -50,6 +50,9 @@ function min(mins){
 function sec(){
     seconds=seconds-1;
     counterClock.innerHTML=(hours<10 ? "0" : "")+hours.toString() + ":"+(minutes<10 ? "0": "")+String(minutes)+":"+(seconds<10? "0":"")+String(seconds);
+    if(hours==0 && minutes==0 && seconds==0){
+        document.querySelector("#myaudio").play();
+    }
     if(seconds>0){
         setTimeout(sec,100);
     }
