@@ -94,10 +94,12 @@ font-size:10px;
 @media all and (max-width:500px){
     section{
         width:50%;
+       padding-left:5px;
     }
     
     section .btn>button{
         margin:2px;
+        
     padding:5px;
     border:1px solid black;
 
@@ -110,6 +112,7 @@ font-size:10px;
     }
     section>.inpt>label{
 font-size:7px;
+
     }
     
 
