@@ -1,0 +1,116 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+   height:100vh;
+   margin:0;
+   padding:0;
+    background-image: url("bc.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    background-position:center center;
+   
+}
+section{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+   
+    
+  
+    }
+section .inpt,.btn{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+section .btn>button{
+  
+    margin:10px;
+    padding:20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    outline:none;
+    background-color: red;
+    border:3px solid black;
+    border-radius: 20px;
+
+}
+section .inpt>input{
+    background-color: black;
+    color:white;
+   border:none;
+   outline:none;
+   font-size:15px;
+    margin-right:20px;
+    margin-left:20px;
+    text-align: center;
+    border-radius: 20px ;
+}
+section>.inpt>label{
+text-transform: capitalize;
+font-size:20px;
+font-family: 'Times New Roman', Times, serif;
+color:white;
+}
+h1{
+    font-size:50px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+@media all and (max-width:600px){
+    section{
+        width:100%:
+    }
+    
+    section .btn>button{
+        margin:5px;
+    padding:10px;
+    border:2px solid black;
+
+    }
+    section .inpt>input{
+        font-size:10px;
+        margin-right:0px;
+        margin-left:0px;
+
+    }
+    section>.inpt>label{
+font-size:10px;
+    }
+    
+
+}
+@media all and (max-width:500px){
+    section{
+        width:50%;
+    }
+    
+    section .btn>button{
+        margin:2px;
+    padding:5px;
+    border:1px solid black;
+
+    }
+    section .inpt>input{
+        font-size:7px;
+        margin-right:0px;
+        margin-left:0px;
+
+    }
+    section>.inpt>label{
+font-size:7px;
+    }
+    
+
+}
